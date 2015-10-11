@@ -60,7 +60,7 @@
 		
 		//Set text height function
 		$(window).scroll(function() {
-			$(''.include').each(function() {
+			$(.include').each(function() {
 				textOffsetBottom = $(window).height() - (parseInt($(this).css('top').replace('px' , '')) + $(this).height());
 				divOffsetBottom = $(window).height()-($(this).closest("section").height()-(-1*($(this).closest("section").offset().top - $(window).scrollTop())));
 				newHeight = Math.max($(this).height() - (divOffsetBottom - textOffsetBottom), 0);
