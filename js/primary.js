@@ -58,8 +58,7 @@
 			$(this).attr('data-top-bottom', newTopBottom);
 		};
 		
-		//Set text height function) {
-
+		//Set text height function
 		$(window).scroll(function() {
 			$('p, .include').each(function() {
 				textOffsetBottom = $(window).height() - (parseInt($(this).css('top').replace('px' , '')) + $(this).height());
