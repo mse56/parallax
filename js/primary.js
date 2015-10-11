@@ -1,5 +1,3 @@
-$( document ).ready(function() {
-
 ( function( $ ) {
 	
 		
@@ -61,6 +59,8 @@ $( document ).ready(function() {
 		};
 		
 		//Set text height function
+		$( document ).ready(function() {
+
 		$(window).scroll(function() {
 			$('p, .include').each(function() {
 				textOffsetBottom = $(window).height() - (parseInt($(this).css('top').replace('px' , '')) + $(this).height());
@@ -72,6 +72,7 @@ $( document ).ready(function() {
 					$(this).css('height' , newHeight);
 				}
 			});
+		});
 		});
 		
 		//Set font width
@@ -236,4 +237,3 @@ $( document ).ready(function() {
 	});	
 	
 } )( jQuery );
-});
