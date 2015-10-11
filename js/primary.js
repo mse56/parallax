@@ -59,7 +59,7 @@
 		};
 		
 		//Set text height function
-		$(window).scroll(function() {
+	/*	$(window).scroll(function() {
 			$('p, .include').each(function() {
 				textOffsetBottom = $(window).height() - (parseInt($(this).css('top').replace('px' , '')) + $(this).height());
 				divOffsetBottom = $(window).height()-($(this).closest("section").height()-(-1*($(this).closest("section").offset().top - $(window).scrollTop())));
@@ -70,7 +70,7 @@
 					$(this).css('height' , newHeight);
 				}
 			});
-		});
+		}); */
 		
 		//Set font width
 		$('p').css('font-size' , winW*.04);
