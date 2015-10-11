@@ -62,7 +62,7 @@
 		$(window).scroll(function() {
 			$('p, .include').each(function() {
 				textOffsetBottom = $(window).height() - (parseInt($(this).css('top').replace('px' , '')) + $(this).height());
-				divOffsetBottom = $(window).height()-($(this).closest("section").height()-(-1*($(this).closest("section").offset(top) - $(window).scrollTop())));
+				divOffsetBottom = $(window).height()-($(this).closest("section").height()-(-1*($(this).closest("section").offsetTop - $(window).scrollTop())));
 				newHeight = Math.max($(this).height() - (divOffsetBottom - textOffsetBottom), 0);
 				if (window.devicePixelRatio == 2 && isChrome) {
 					$(this).css('clip' , 'rect(0px, ' + $(this).width() + 'px, ' + newHeight + 'px, 0px)');
