@@ -58,8 +58,7 @@
 			$(this).attr('data-top-bottom', newTopBottom);
 		};
 		
-		//Set text height function
-		$( document ).ready(function() {
+		//Set text height function) {
 
 		$(window).scroll(function() {
 			$('p, .include').each(function() {
@@ -72,7 +71,6 @@
 					$(this).css('height' , newHeight);
 				}
 			});
-		});
 		});
 		
 		//Set font width
